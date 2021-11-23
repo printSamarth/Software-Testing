@@ -338,16 +338,6 @@ public class CalculatorMethods {
         return hexdecnum;
     }
 
-    int bin_To_dec(long binary)
-    {
-        int decimalNumber = 0, i = 0;
-        while (binary > 0) {
-            decimalNumber += Math.pow(2, i++) * (binary % 10);
-            binary /= 10;
-        }
-
-        return decimalNumber;
-    }
 
     /* convert given octal number to binary number */
     public int oct_to_bin(int d)
