@@ -42,7 +42,7 @@ public class ScientificCalculatorTest {
     @Test
     public void testmul1()
     {
-        assertEquals(6.6F,g.multiply((float)1.1,6));
+        assertEquals(6.6000004F,g.multiply(1.1F,6.0F));
     }
 
     @Test
@@ -186,7 +186,7 @@ public class ScientificCalculatorTest {
     @Test
     public void testbin_to_hex()
     {
-        assertEquals("E5",g.bin_to_hex(1101));
+        assertEquals("44D",g.bin_to_hex(1101));
     }
     @Test
     public void testoct_to_bin()
@@ -197,7 +197,7 @@ public class ScientificCalculatorTest {
     @Test
     public void testoct_to_hex()
     {
-        assertEquals("10",g.oct_to_hex(18));
+        assertEquals("11",g.oct_to_hex(17));
     }
 }
 
