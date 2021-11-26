@@ -17,7 +17,8 @@ public class Main {
 		if (choiceCal == 1) {
 			scientificCalculator.scientificDriver();
 		}
-		else if(choiceCal == 2){
+		else if(choiceCal == 2){                //example
+
 			bmiDriver.bmiDriver();
 		}
 		else{
