@@ -16,6 +16,12 @@ public class ScientificCalculatorTest {
     }
 
     @Test
+    public void testadd()
+    {
+        assertEquals(-1F,g.addition(-1,0));
+    }
+
+    @Test
     public void testadd1()
     {
         assertEquals(13.1F,g.addition((float)5.6,(float)7.5));

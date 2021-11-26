@@ -7,15 +7,21 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Which Calculator do you want ?");
-		System.out.println("Enter 1 for Scientific calculators and 2 for Fitness Calculators");
+		System.out.println("Enter 1 for Scientific calculators");
+		System.out.println("Enter 2 for Fitness Calculators");
+		System.out.println("Enter 3 for Matrix Calculators");
 		int choiceCal = sc.nextInt();
 		ScientificCalculator scientificCalculator = new ScientificCalculator();
+		MatrixCalculator matrixCalculator = new MatrixCalculator();
 		Main bmiDriver = new Main();
 		if (choiceCal == 1) {
 			scientificCalculator.scientificDriver();
 		}
-		else{
+		else if(choiceCal == 2){
 			bmiDriver.bmiDriver();
+		}
+		else{
+			matrixCalculator.driver();
 		}
     }
 	public void bmiDriver(){

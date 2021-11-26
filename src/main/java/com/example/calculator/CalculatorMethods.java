@@ -380,4 +380,46 @@ public class CalculatorMethods {
         return hexdec;
     }
 
+    // add two 3-d matrices
+    public int[][] matrixAddition(int [][] a, int [][] b)
+    {
+        int [][] c= new int[3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                c[i][j] = a[i][j] + b[i][j];
+            }
+        }
+        return c;
+    }
+
+
+    // subtract two 3-d matrices
+    public int[][] matrixSubtraction(int [][] a, int [][] b)
+    {
+        int [][] c= new int[3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                c[i][j] = a[i][j] - b[i][j];
+            }
+        }
+        return c;
+    }
+
+
+    // multiply two 3-d matrices
+    public int[][] matrixMultiplication(int [][] a, int [][] b)
+    {
+        int [][] c= new int[3][3];
+        for(int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                for (int k = 0; k < 3; k++)
+                {
+                    c[i][j] += a[i][k] * b[k][j];
+                }
+            }
+        }
+        return c;
+    }
 }
