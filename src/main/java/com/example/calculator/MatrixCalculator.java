@@ -7,7 +7,7 @@ public class MatrixCalculator {
             int choice = getChoice();
             MatrixCalculatorMethods matrixCalculatorMethods = new MatrixCalculatorMethods();
             Scanner sc = new Scanner(System.in);
-            while(choice != 7){
+            while(choice != 5){
                 switch (choice){
                     case 1:
                         System.out.println("Enter size of matrices:");
