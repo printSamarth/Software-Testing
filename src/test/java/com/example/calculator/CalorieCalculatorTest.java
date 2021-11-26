@@ -1,5 +1,8 @@
 package com.example.calculator;
 
+//        res=bodyFatCalculator.calculate('m',1,1,1,1,70);
+//        assertEquals("Invalid Inputs", res);
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -13,9 +16,6 @@ public class CalorieCalculatorTest {
         String res;
 
         res=calorieCalculator.calculate(10,'F',0,0,0);
-        assertEquals("Invalid Inputs", res);
-
-        res=calorieCalculator.calculate(10,'m',0,0,-1);
         assertEquals("Invalid Inputs", res);
 
         res=calorieCalculator.calculate(16,'F',1.5,55,0);
@@ -33,8 +33,8 @@ public class CalorieCalculatorTest {
         res=calorieCalculator.calculate(59,'m',1.74,84,4);
         assertNotEquals("Invalid Inputs", res);
 
-        res=calorieCalculator.calculate(62,'F',1.64,70,5);
-        assertNotEquals("Invalid Inputs", res);
+        res=calorieCalculator.calculate(25,'M',1.8,65,5);
+        assertEquals("Number of calories to consume everyday: 1028.375", res);
 
     }
 }

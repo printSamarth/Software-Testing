@@ -44,6 +44,18 @@ public class BmiCalculatorTest {
         res=bmiCalculator.calculate(1, 30);
         assertNotEquals("Invalid Inputs", res);
 
+        res=bmiCalculator.calculate(10, 100);
+        assertEquals("Underweight. Your BMI is 1.0", res);
+
+        res=bmiCalculator.calculate(1.65, 65);
+        assertEquals("Healthy. Your BMI is 23.875114784205696", res);
+
+        res=bmiCalculator.calculate(1.7, 80);
+        assertEquals("Overweight. Your BMI is 27.68166089965398", res);
+
+        res=bmiCalculator.calculate(1.8, 110);
+        assertEquals("Obese. Your BMI is 33.95061728395061", res);
+
     }
 //    @Test
 //    public void calculateBmi()

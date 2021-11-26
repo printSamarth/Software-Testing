@@ -11,13 +11,16 @@ public class IdealWeightCalculatorTest {
         IdealWeightCalculator idealWeightCalculator = new IdealWeightCalculator();
         String res;
 
+        res=idealWeightCalculator.calculate(25,'M',180);
+        assertNotEquals("Ideal weight should be 72.6", res);
+
+        res=idealWeightCalculator.calculate(58,'M',165);
+        assertNotEquals("Ideal weight should be 61.4", res);
+
         res=idealWeightCalculator.calculate(10,'F',0);
         assertNotEquals("Invalid Inputs", res);
 
         res=idealWeightCalculator.calculate(1,'f',60);
-        assertNotEquals("Invalid Inputs", res);
-
-        res=idealWeightCalculator.calculate(18,'M',165);
         assertNotEquals("Invalid Inputs", res);
 
         res=idealWeightCalculator.calculate(25,'f',175);
@@ -28,5 +31,6 @@ public class IdealWeightCalculatorTest {
 
         res=idealWeightCalculator.calculate(30,'F',164);
         assertNotEquals("Invalid Inputs", res);
+
     }
 }

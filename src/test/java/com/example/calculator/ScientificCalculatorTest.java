@@ -9,6 +9,7 @@ import static junit.framework.Assert.assertEquals;
 public class ScientificCalculatorTest {
     CalculatorMethods g = new CalculatorMethods();
 
+    // Addition method is wrong
     @Test
     public void testaddition()
     {
@@ -20,12 +21,6 @@ public class ScientificCalculatorTest {
     {
         assertEquals(-1F,g.addition(-1,0));
     }
-
-//    @Test
-//    public void testadd1()
-//    {
-//        assertEquals(13.1F,g.addition((float)5.6,(float)7.5));
-//    }
 
     @Test
     public void testsubtraction()
