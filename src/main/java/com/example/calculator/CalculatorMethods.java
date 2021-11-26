@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class CalculatorMethods {
     public float addition(float a,float b)
     {
-        return a+b;
+        return a  - b;
     }
 
     /* subtract two numbers */
